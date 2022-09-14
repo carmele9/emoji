@@ -33,7 +33,8 @@ emotion_model.add(Dense(7,activation="softmax"))
 
 #emotion_model.save_weights("model.h5")
 
-#emotion_model.load_weights("model.h5")
+
+emotion_model.load_weights("emotion_model.h5")
 
 cv2.ocl.setUseOpenCL(False)
 emotion_dictionary={0:"Angry",1:"Disgusted", 2:"Fearful", 3:"Happy", 4:"Neutral",5:"Sad",6:"Surprised"}
